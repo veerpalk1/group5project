@@ -1,18 +1,17 @@
-import { useState } from 'react';
-import Calculate from './Calculate'; // Import the Calculate component
+import  { useState } from 'react';
 
 function App() {
-  const [count, setCount] = useState(0); // Initialize state variable count
+  const [count, setCount] = useState(0); // State to keep track of the count
 
   return (
-    <>
-      <Calculate /> {/* Include the Calculate component */}
-      <h1>Hello!, This is group5 project</h1>
-      <h2>This is first React Vite project for learning Git workflow</h2>
+    <div>
+      <h1>Hello, Welcome to the React App!</h1>
+      <h2>This is a basic React app</h2>
       <button onClick={() => setCount(count + 1)}>Increase Count</button>
       <p>Current Count: {count}</p>
-    </>
+    </div>
   );
 }
 
 export default App;
+
