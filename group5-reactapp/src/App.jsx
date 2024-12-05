@@ -1,4 +1,4 @@
-import React , { useState } from 'react'; // Import React and useState
+import React, { useState } from 'react'; // Import React and useState
 import Calculate from './Calculate'; // Import the Calculate component
 
 function App() {
