@@ -4,22 +4,19 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
-
+  
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v2
 
     - name: Setup Node.js
-      uses: actions/setup-node@v4
+      uses: actions/setup-node@v2
       with:
-        node-version:  v20.17.0
+        node-version:  '20.17.0'
 
     - name: Install dependencies
       run: npm install
@@ -32,8 +29,10 @@ jobs:
     - name: Build project
       run: npm run build
       working-directory: ./group5-reactapp
-      
-    - name: Run linting
+
+      - name: Run linting
       run: npx eslint .
+
+    
 
      
