@@ -8,6 +8,6 @@ describe('sum function', () => {
   });
 
   test('adds 10 + 20 to equal 30', () => {
-    expect(sum(20, 20)).toBe(40);
+    expect(sum(10, 20)).toBe(30);
   });
 });
